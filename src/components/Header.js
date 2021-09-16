@@ -1,7 +1,15 @@
 import React from 'react';
-import SocialMedia from './SocialMedia';
+import Country from '../layouts/Country';
+import SocialMedia from '../layouts/SocialMedia';
 
 class Header extends React.PureComponent {
+  links = [
+    { name: 'Home', link: '/' },
+    { name: 'Booking', link: '/booking' },
+    { name: 'Contact', link: '/contact' },
+    { name: 'About', link: '/about' },
+    { name: 'Blog', link: '/blog' },
+  ];
   render() {
     return (
       <header>
@@ -17,43 +25,23 @@ class Header extends React.PureComponent {
                       </a>
                     </div>
                   </div>
-                  <div className="col-xl-5 col-lg-5">
+                  <div className="col-xl-4 col-lg-4">
                     <div className="main-menu  d-none d-lg-block">
                       <nav>
                         <ul id="navigation">
-                          <li>
-                            <a className="active" href="/">
-                              home
-                            </a>
-                          </li>
-                          <li>
-                            <a className="" href="/booking">
-                              Booking
-                            </a>
-                          </li>
-                          <li>
-                            <a href="/contact">Contact</a>
-                          </li>
-                          <li>
-                            <a href="/about">About</a>
-                          </li>
-                          <li>
-                            <a href="/blog">Blog</a>
-                          </li>
+                          {this.links.map((elt) => (
+                            <li key={elt.name}>
+                              <a className="active" href={elt.link}>
+                                {elt.name}
+                              </a>
+                            </li>
+                          ))}
                         </ul>
                       </nav>
                     </div>
                   </div>
                   <SocialMedia />
-                  <div className="seach_icon">
-                    <a
-                      data-toggle="modal"
-                      data-target="#exampleModalCenter"
-                      href="/todo"
-                    >
-                      <i className="fa fa-language"></i>
-                    </a>
-                  </div>
+                  <Country />
                   <div className="col-12">
                     <div className="mobile_menu d-block d-lg-none"></div>
                   </div>

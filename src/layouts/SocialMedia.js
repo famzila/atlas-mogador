@@ -3,7 +3,7 @@ import React from 'react';
 class SocialMedia extends React.PureComponent {
   render() {
     return (
-      <div className="col-xl-4 col-lg-4 d-none d-lg-block">
+      <div className="col-xl-3 col-lg-3 d-none d-lg-block">
         <div className="social_wrap d-flex align-items-center justify-content-end">
           <div className="number">
             <p>
@@ -14,19 +14,31 @@ class SocialMedia extends React.PureComponent {
           <div className="social_links d-none d-xl-block">
             <ul>
               <li>
-                <a href="https://www.instagram.com/atlas_mogador" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.instagram.com/atlas_mogador"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {' '}
                   <i className="fa fa-instagram"></i>{' '}
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/atlas_mogador" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.facebook.com/atlas_mogador"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {' '}
                   <i className="fa fa-facebook"></i>{' '}
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/atlas_mogador" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.youtube.com/atlas_mogador"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="fa fa-youtube-play"></i>
                 </a>
               </li>

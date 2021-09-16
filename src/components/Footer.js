@@ -11,7 +11,7 @@ class Footer extends React.PureComponent {
                 <div className="footer_widget">
                   <div className="footer_logo">
                   <a href="/home">
-                        <img src={'assets/img/logo-door.png'} alt="" />
+                        <img src={'assets/img/logo-golden.png'} alt="" />
                       </a>
                   </div>
                   <p>

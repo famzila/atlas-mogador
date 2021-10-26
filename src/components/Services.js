@@ -91,8 +91,8 @@ class Services extends React.PureComponent {
               </div>
             </div>
             <div className="row">
-              {this.state.bigCards.map((card) => (
-                <BigCard card={card} />
+              {this.state.bigCards.map((card, index) => (
+                <BigCard key={index} card={card} />
               ))}
             </div>
             <div className="row center">

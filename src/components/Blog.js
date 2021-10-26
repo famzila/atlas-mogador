@@ -244,7 +244,7 @@ class Blog extends React.Component {
                             className="form-control"
                             placeholder="Search Keyword"
                             onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Search Keyword'"
+                            onBlur="this.placeholder = 'Search Keyword'"
                           />
                           <div className="input-group-append">
                             <button className="btn" type="button">
@@ -442,7 +442,7 @@ class Blog extends React.Component {
                           type="email"
                           className="form-control"
                           onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter email'"
+                          onBlur="this.placeholder = 'Enter email'"
                           placeholder="Enter email"
                           required
                         />

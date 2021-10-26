@@ -6757,3 +6757,9 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.not-found img {
+  width: 1000px;
+  margin: 50px;
+  text-align: center;
+}

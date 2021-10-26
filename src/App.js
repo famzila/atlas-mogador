@@ -21,7 +21,11 @@ function App() {
           exact
           render={(props) => <Contact {...props} />}
         />
-        <Route path="/booking" exact render={(props) => <Booking {...props} />} />
+        <Route
+          path="/booking"
+          exact
+          render={(props) => <Booking {...props} />}
+        />
         <Route path="/about" exact render={(props) => <About {...props} />} />
         <Route path="/blog" exact render={(props) => <Blog {...props} />} />
         <Route
@@ -31,8 +35,8 @@ function App() {
         />
         <Redirect to="/not-found" />
       </Switch>
-        <Footer />
-      </BrowserRouter>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,12 @@
+{
+    "welcome": {
+        "title": "Welcome"
+    },
+    "routes": {
+        "home": "Home",
+        "booking": "Booking",
+        "blog": "Blog",
+        "contact": "Contact",
+        "about":"About"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "welcome": {
+        "title": "Bienvenue"
+    },
+    "routes": {
+        "home": "Accueil",
+        "booking": "Reservation",
+        "blog": "Blog",
+        "contact": "contact",
+        "about":"Nous sommes"
+    }
+}

@@ -7,12 +7,12 @@ import Testimonials from '../components/Testimonials';
 class Home extends React.PureComponent {
   render() {
     return (
-      <div>
+      <>
         <Banner />
         <Services />
         <Testimonials />
         <Activities />
-      </div>
+      </>
     );
   }
 }

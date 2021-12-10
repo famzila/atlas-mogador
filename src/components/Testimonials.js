@@ -35,7 +35,7 @@ function Testimonials() {
                         <div className='single_testmonial text-center'>
                           <div className='author_thumb'>
                             <img
-                              src={require(testimonial.avatar)}
+                              src={require(`${testimonial.avatar}`).default}
                               alt={testimonial.author}
                             />
                           </div>

@@ -1,12 +1,22 @@
 {
-    "welcome": {
-        "title": "Bienvenue"
-    },
-    "routes": {
-        "home": "Accueil",
-        "booking": "Reservation",
-        "blog": "Blog",
-        "contact": "contact",
-        "about":"Nous sommes"
-    }
+  "welcome": {
+    "title": "Bienvenue"
+  },
+  "routes": {
+    "home": "Accueil",
+    "booking": "Reservation",
+    "blog": "Blog",
+    "contact": "contact",
+    "about": "Nous sommes"
+  },
+  "contact": {
+    "address": "Dar Tassourt",
+    "subAddress": "Essaouira, Morocco",
+    "phone": "(+212)02 92 18 25 66",
+    "distensibilities": "Mon to Fri 9am to 6pm",
+    "email": "atlas.mogador@contact.com",
+    "emailMessage": "Send us your query anytime!",
+    "title": "Contact",
+    "sectionTitle": "Get in touch"
+  }
 }

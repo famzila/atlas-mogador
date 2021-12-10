@@ -9,8 +9,8 @@ class Coming extends React.PureComponent {
             <div className="row">
               <div className="col-xl-12">
                 <div className="bradcam_text text-center">
-                  <h3>Coming soon</h3>
-                  <p>Feel free to contact us...</p>
+                  <h3>COMING SOON</h3>
+                  <p>FEEL FREE TO CONTACT US...ZANKYOU</p>
                 </div>
               </div>
             </div>

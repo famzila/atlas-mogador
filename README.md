@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+TO-DO list
+- Add translation blocs for common/fr and common/en (for every component not yet translated)
+- Create About content
+- Create links for real Blogs for Blog page
+- Fix avatar bug in the Testimonials component

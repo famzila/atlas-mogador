@@ -23,12 +23,12 @@
     "first": {
       "feedback": "I found a relaxed atmosphere, and the medina is exactly the right size to get your bearings and explore without getting (too) lost. a lovely experience and a lot of hidden little shops to discover, I'll visit it again and again",
       "avatar": "assets/img/testmonial/author1.jpg",
-      "name": "Mr. Smith"
+      "author": "Mr. Smith"
     },
     "second": {
       "feedback": "Very safe and friendly Medina. Every shop and stall imaginable. The people don’t hassle you. Good prices, lots of great places to eat and drink",
       "avatar": "assets/img/testmonial/author1.jpg",
-      "name": "Ms. Fatima"
+      "author": "Ms. Fatima"
     },
     "third": {
       "feedback": "I am in love with this city. No matter how many times I come back, I just keep discovering more and more. I recommend staying at a Riad versus a hotel for a more authentic experience.",

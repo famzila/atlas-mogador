@@ -1,22 +1,17 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
+
 import Country from '../layouts/Country'
 import SocialMedia from '../layouts/SocialMedia'
 
-function Header() {
-  const { t, i18n } = useTranslation('common')
-
+function Header(props) {
   const links = [
-    { name: `${t('routes.home')}`, link: '/' },
-    { name: `${t('routes.booking')}`, link: '/booking' },
-    { name: `${t('routes.contact')}`, link: '/contact' },
-    { name: `${t('routes.about')}`, link: '/about' },
-    { name: `${t('routes.blog')}`, link: '/blog' },
+    { name: `${props.t('routes.home')}`, link: '/' },
+    { name: `${props.t('routes.booking')}`, link: '/booking' },
+    { name: `${props.t('routes.contact')}`, link: '/contact' },
+    { name: `${props.t('routes.about')}`, link: '/about' },
+    { name: `${props.t('routes.blog')}`, link: '/blog' },
   ]
-  // Switch to chosen language
-  const switchLanguage = (lang) => {
-    i18n.changeLanguage(lang)
-  }
+
   return (
     <header className='header-area'>
       <div id='sticky-header' className='main-header-area'>
@@ -46,7 +41,7 @@ function Header() {
                 </div>
               </div>
               <SocialMedia />
-              <Country setLanguage={switchLanguage} />
+              <Country setLanguage={props.switchLanguage} />
               <div className='col-12'>
                 <div className='mobile_menu d-block d-lg-none'></div>
               </div>

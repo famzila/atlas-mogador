@@ -5,18 +5,18 @@ function Testimonials() {
   const { t } = useTranslation('common')
   const testimonials = [
     {
-      author: `${t('testimonials.first.name')}`,
-      avatar: `${t('testimonials.first.avatar')}`,
+      author: `${t('testimonials.first.author')}`,
+      // avatar: require(`${t('testimonials.first.avatar')}`).default,
       feedback: `${t('testimonials.first.feedback')}`,
     },
     {
-      author: `${t('testimonials.second.name')}`,
-      avatar: `${t('testimonials.second.avatar')}`,
+      author: `${t('testimonials.second.author')}`,
+      // avatar: require(`${t('testimonials.first.avatar')}`).default,
       feedback: `${t('testimonials.second.feedback')}`,
     },
     {
-      author: `${t('testimonials.third.name')}`,
-      avatar: `${t('testimonials.third.avatar')}`,
+      author: `${t('testimonials.third.author')}`,
+      // avatar: require(`${t('testimonials.first.avatar')}`).default,
       feedback: `${t('testimonials.third.feedback')}`,
     },
   ]
@@ -35,7 +35,7 @@ function Testimonials() {
                         <div className='single_testmonial text-center'>
                           <div className='author_thumb'>
                             <img
-                              src={require(`${testimonial.avatar}`).default}
+                              src='assets/img/testmonial/author1.jpg'
                               alt={testimonial.author}
                             />
                           </div>

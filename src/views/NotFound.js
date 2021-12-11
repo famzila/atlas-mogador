@@ -1,21 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-class NotFound extends React.PureComponent {
-  render() {
-    return (
-      <section className="contact-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="not-found">
-                <img src="assets/img/not-found2.png" alt="Not found" />
-              </div>
+function NotFound(props) {
+  return (
+    <section className='contact-section'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12'>
+            <div className='not-found'>
+              <img src='assets/img/not-found2.png' alt='Not found' />
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  )
 }
 
-export default NotFound;
+export default NotFound

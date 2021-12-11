@@ -1,8 +1,7 @@
 import React from 'react';
 
-class Blog extends React.Component {
-  render() {
-    return (
+function Blog(props){
+return (
       <div>
         <div className="bradcam_area bradcam_bg_4">
           <div className="container">
@@ -462,7 +461,6 @@ class Blog extends React.Component {
         </section>
       </div>
     );
-  }
 }
 
 export default Blog;

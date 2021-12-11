@@ -1,19 +1,12 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
-function Contact() {
-  const { t, i18n } = useTranslation('common')
-
-  // Switch to chosen language
-  const switchLanguage = (lang) => {
-    i18n.changeLanguage(lang)
-  }
+function Contact(props) {
   return (
     <section className='contact-section'>
       <div className='container'>
         <div className='row'>
           <div className='col-12'>
-            <h2 className='contact-title'>{t('contact.sectionTitle')}</h2>
+            <h2 className='contact-title'>{props.t('contact.sectionTitle')}</h2>
           </div>
           <div className='col-lg-8'>
             <form
@@ -94,8 +87,8 @@ function Contact() {
                 <i className='ti-home'></i>
               </span>
               <div className='media-body'>
-                <h3>{t('contact.address')}.</h3>
-                <p>{t('contact.subAddress')}</p>
+                <h3>{props.t('contact.address')}.</h3>
+                <p>{props.t('contact.subAddress')}</p>
               </div>
             </div>
             <div className='media contact-info'>
@@ -103,8 +96,8 @@ function Contact() {
                 <i className='ti-tablet'></i>
               </span>
               <div className='media-body'>
-                <h3>{t('contact.phone')}</h3>
-                <p>{t('contact.distensibilities')}</p>
+                <h3>{props.t('contact.phone')}</h3>
+                <p>{props.t('contact.distensibilities')}</p>
               </div>
             </div>
             <div className='media contact-info'>
@@ -112,8 +105,8 @@ function Contact() {
                 <i className='ti-email'></i>
               </span>
               <div className='media-body'>
-                <h3>{t('contact.email')}</h3>
-                <p>{t('contact.emailMessage')}</p>
+                <h3>{props.t('contact.email')}</h3>
+                <p>{props.t('contact.emailMessage')}</p>
               </div>
             </div>
           </div>

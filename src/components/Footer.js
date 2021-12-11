@@ -4,10 +4,6 @@ import { useTranslation } from 'react-i18next'
 function Footer() {
   const { t, i18n } = useTranslation('common')
 
-  // Switch to chosen language
-  const switchLanguage = (lang) => {
-    i18n.changeLanguage(lang)
-  }
   return (
     <footer className='footer'>
       <div className='footer_top'>

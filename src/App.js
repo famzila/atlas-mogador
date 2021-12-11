@@ -1,43 +1,51 @@
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Contact from './views/Contact';
-import Home from './views/Home';
-import About from './views/About';
-import NotFound from './views/NotFound';
-import Blog from './components/Blog';
-import Booking from './views/Booking';
-import Coming from './views/Coming';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Contact from './views/Contact'
+import Home from './views/Home'
+import About from './views/About'
+import NotFound from './views/NotFound'
+import Blog from './components/Blog'
+import Booking from './views/Booking'
+import Coming from './views/Coming'
 
-function App() {
+function App(props) {
+  const { t, i18n } = useTranslation('common')
+  // Switch to chosen language
+  const switchLanguage = (lang) => {
+    i18n.changeLanguage(lang)
+  }
   return (
     <BrowserRouter>
-      <Header />
+      <Header t={t} switchLanguage={switchLanguage} />
       <Switch>
-        <Route path="/" exact render={(props) => <Coming {...props} />} />
-        <Route path="/home" exact render={(props) => <Home {...props} />} />
-        <Route
-          path="/contact"
-          exact
-          render={(props) => <Contact {...props} />}
-        />
-        <Route
-          path="/booking"
-          exact
-          render={(props) => <Booking {...props} />}
-        />
-        <Route path="/about" exact render={(props) => <About {...props} />} />
-        <Route path="/blog" exact render={(props) => <Blog {...props} />} />
-        <Route
-          path="/not-found"
-          exact
-          render={(props) => <NotFound {...props} />}
-        />
-        <Redirect to="/not-found" />
+        <Route path='/' exact>
+          <Coming t={t} />
+        </Route>
+        <Route path='/home' exact>
+          <Home t={t} />
+        </Route>
+        <Route path='/contact' exact>
+          <Contact t={t} />
+        </Route>
+        <Route path='/booking' exact>
+          <Booking t={t} />
+        </Route>
+        <Route path='/about' exact>
+          <About t={t} />
+        </Route>
+        <Route path='/blog' exact>
+          <Blog t={t} />
+        </Route>
+        <Route path='/not-found' exact>
+          <NotFound t={t} />
+        </Route>
+        <Redirect to='/not-found' />
       </Switch>
       <Footer />
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

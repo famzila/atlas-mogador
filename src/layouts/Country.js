@@ -3,15 +3,15 @@ import React, { useState } from 'react'
 export default function Country(props) {
   const countries = [
     {
-      name: 'France',
-      key: 'fr',
-      img: 'assets/img/header/fr.png',
-      class: 'dropdown-item',
-    },
-    {
       name: 'United State',
       key: 'en',
       img: 'assets/img/header/us.png',
+      class: 'dropdown-item',
+    },
+    {
+      name: 'France',
+      key: 'fr',
+      img: 'assets/img/header/fr.png',
       class: 'dropdown-item',
     },
     {
@@ -22,8 +22,8 @@ export default function Country(props) {
     },
   ]
   const currencies = [
-    { name: 'EUR', key: 'eur', class: 'dropdown-item' },
     { name: 'Dollar', key: 'dollar', class: 'dropdown-item' },
+    { name: 'EUR', key: 'eur', class: 'dropdown-item' },
     { name: 'Dirham', key: 'dirham', class: 'dropdown-item' },
   ]
   const [selectedCurrency, setSelectedCurrency] = useState(currencies[0])

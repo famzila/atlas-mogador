@@ -1,24 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-class Coming extends React.PureComponent {
-  render() {
-    return (
-      <div>
-        <div className="bradcam_area bradcam_bg_2">
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="bradcam_text text-center">
-                  <h3>COMING SOON</h3>
-                  <p>FEEL FREE TO CONTACT US...ZANKYOU</p>
-                </div>
+function Coming(props) {
+  return (
+    <div>
+      <div className='bradcam_area bradcam_bg_2'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-xl-12'>
+              <div className='bradcam_text text-center'>
+                <h3>COMING SOON</h3>
+                <p>FEEL FREE TO CONTACT US...ZANKYOU</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  )
 }
 
-export default Coming;
+export default Coming

@@ -10,7 +10,7 @@ import Blog from './components/Blog'
 import Booking from './views/Booking'
 import Coming from './views/Coming'
 
-function App(props) {
+function App() {
   const { t, i18n } = useTranslation('common')
   // Switch to chosen language
   const switchLanguage = (lang) => {
@@ -43,7 +43,7 @@ function App(props) {
         </Route>
         <Redirect to='/not-found' />
       </Switch>
-      <Footer />
+      <Footer t={t} />
     </BrowserRouter>
   )
 }

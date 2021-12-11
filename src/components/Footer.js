@@ -1,9 +1,6 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
-function Footer() {
-  const { t, i18n } = useTranslation('common')
-
+function Footer(props) {
   return (
     <footer className='footer'>
       <div className='footer_top'>
@@ -17,10 +14,11 @@ function Footer() {
                   </a>
                 </div>
                 <p>
-                  {t('contact.adress')} <br /> {t('contact.subAddress')}
+                  {props.t('contact.address')} <br />{' '}
+                  {props.t('contact.subAddress')}
                   <br />
-                  <a href='/todo'>{t('contact.phone')}</a> <br />
-                  <a href='/todo'>{t('contact.email')}</a>
+                  <a href='/todo'>{props.t('contact.phone')}</a> <br />
+                  <a href='/todo'>{props.t('contact.email')}</a>
                 </p>
                 <div className='socail_links'>
                   <ul>
@@ -48,13 +46,13 @@ function Footer() {
                 <h3 className='footer_title'>Company</h3>
                 <ul className='links'>
                   <li>
-                    <a href='/booking'>{t('routes.booking')}</a>
+                    <a href='/booking'>{props.t('routes.booking')}</a>
                   </li>
                   <li>
-                    <a href='/about'> {t('routes.about')}</a>
+                    <a href='/about'> {props.t('routes.about')}</a>
                   </li>
                   <li>
-                    <a href='/contact'> {t('routes.contact')}</a>
+                    <a href='/contact'> {props.t('routes.contact')}</a>
                   </li>
                 </ul>
               </div>
